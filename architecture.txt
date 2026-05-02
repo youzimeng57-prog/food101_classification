@@ -1,0 +1,15 @@
+food101_classification/
+│
+├── checkpoints   #存储最佳模型
+├── data              #原始数据集
+├── test_images            #自建数据集
+├── logs              #存储日志和结果
+├── config.py              # 配置文件（超参数、路径等）
+├── dataset.py             # 数据集封装与数据增强
+├── model.py               # 模型定义（ResNet-50迁移学习）
+├── train.py               # 训练主脚本（含验证与模型保存）
+├── utils.py               # 辅助工具（日志、绘图、显存监控等）
+├── test.py               # 用自己的图像测试
+└── requirements.txt       # 依赖包列表
+
+#只需运行train.py 和 test.py 即可
