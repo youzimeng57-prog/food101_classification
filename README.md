@@ -18,11 +18,13 @@
 ```
 
 ## 环境配置
-
+1.安装numpy等库
 ```bash
 pip install -r requirements.txt
 ```
-若使用 Windows 系统，可运行提供的 `.bat` 批处理文件完成依赖安装。
+
+2.安装PyTorch with CUDA support
+若使用 Windows 系统，可运行提供的 `.bat` 批处理文件完成依赖安装
 
 ## 数据集准备
 
