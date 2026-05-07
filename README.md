@@ -6,15 +6,23 @@
 
 ```
 .
-├── data/
-│   └── food-101/               # 存放原始数据集（需自行下载）
-├── test_images/                # 自主验证图像及标注文件
-│   ├── *.jpg / *.png           # 待测试的食物图片
-│   └── labels.json       # 图片对应的真实类别标注
-├── train.py                    # 模型训练脚本
-├── test.py                     # 模型测试脚本
-├── requirements.txt            # Python 依赖列表
-└── README.md                   # 项目说明文档
+food101_classification/
+│
+├── data/                        # 原始 Food-101 数据集（需自行下载）
+│   └── food-101/                # 数据集实际存放位置
+│
+├── test_images/                 # 自主验证图像及标注文件
+│   ├── *.jpg / *.png            # 待测试的食物图片
+│   └── labels.json              # 图片对应的真实类别标注（键：文件名，值：Food-101 类别名）
+│
+├── config.py                    # 配置文件
+├── dataset.py                   # 数据集封装与数据增强
+├── model.py                     # 模型定义
+├── train.py                     # 训练主脚本
+├── test.py                      # 使用自定义图像测试模型
+├── utils.py                     # 辅助工具
+├── requirements.txt             # Python 依赖包列表
+└── README.md                    # 项目说明文档
 ```
 
 ## 环境配置
